@@ -1,6 +1,6 @@
 var teste = ' "javascript" ';
 console.log(teste.search(/script/i));
-console.log(teste.replace(/javascript/gi,"JAVASCRIPT"));
+console.log(teste.replace(/javascript/gi,"JAVACRIPT"));
 /* uma situação composta de aspas , seguidas de qualquer numero de 
 caracteres que nao sao aspaas (as quais lembramos), seguidosde outras aspas*/
 var aspas = /"([^"]*)"/g;
@@ -11,7 +11,7 @@ console.log(teste.replace(aspas, '"$1"'));
 /*analiznado uma url com o codigo aseguir*/
 var url = /(\w+):\/\/([\w.]+)\/(\S*)/;
 
-var text = "Visite nosso site em http://www.sitecolisao.com/~jogos";
+var text = "Visite nosso site em http://www.sitecolisao.com/~^jogos";
 var result = text.match(url);
 if(result != null)
 {
